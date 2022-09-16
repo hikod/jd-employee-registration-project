@@ -29,8 +29,8 @@
                     </thead>
                     <tbody>
                     <tr th:each="employee : ${employees}">
-                        <td th:text="${employee.firstName()}"></td>
-                        <td th:text="${employee.lastName()}"></td>
+                        <td th:text="${employee.firstName}"></td>
+                        <td th:text="${employee.lastName}"></td>
                         <td th:text="${#execInfo.getNow().get(1) - employee.birthday.getYear()}"></td>
                         <td th:text="${employee.address + ' '+ employee.address2}"></td>
                         <td th:text="${employee.city}"></td>
